@@ -1,0 +1,1048 @@
+/* ESTE ES MI HEADER*/
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  background-color: #1a1026;
+  background-repeat: no-repeat;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.arcadiaTitle {
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: "Nabla";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.mainLinks {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.mainLinks:hover {
+  color: #ff4ddb;
+}
+
+.linksNuevos {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.linksNuevos:hover {
+  color: #ff4ddb;
+}
+
+/*ESTE ES MI BODY*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+/* ESTE ES MI MAIN*/
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.mainStyle {
+  background: #34124b;
+}
+
+.firstSectionContainer {
+  width: 454px;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.textAndButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleStyle {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 38px;
+  margin: 0px;
+  color: #f2f2f7;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spanJuga {
+  color: #ffffff;
+}
+
+.titleStyleGame {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0px;
+  color: #f2f2f7;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+.gamesContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap: 2rem;
+}
+
+.styledGame {
+  border: 1px solid #52246f;
+
+  border-radius: 15px;
+
+  background-color: #1a1026;
+  box-shadow:
+    0 0 5px #ad399b,
+    0 0 10px #ad399b,
+    0 0 20px #6e2bff;
+}
+
+.styledVideo {
+  border: 1px solid #52246f;
+
+  border-radius: 15px;
+
+  background-color: #1a1026;
+  box-shadow:
+    0 0 5px #ad399b,
+    0 0 10px #ad399b,
+    0 0 20px #6e2bff;
+}
+
+.video {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+.imgPopular {
+  padding: 1rem;
+  border-radius: 25px;
+  height: 400px;
+  width: 300px;
+}
+
+.imgAndStars {
+  margin-bottom: 1rem;
+}
+
+.userAvatar {
+  width: 40px;
+
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.fa-star {
+  color: #ff4fe0;
+}
+
+.buyLink {
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  padding: 8px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  background: transparent;
+  width: 114px;
+  align-self: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.buyLink:hover {
+  background: #ff00ff;
+  color: #000;
+  box-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff;
+}
+
+.imgAndTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.listStyle {
+  border-right: 2px solid white;
+  padding-right: 1rem;
+}
+
+.paragraphStyle {
+  color: #ffffff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  gap: 1rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.anchorButton1 {
+  text-decoration: none;
+  padding: 5px;
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  background-color: #ff00ff;
+  padding: 8px;
+  margin: 1rem;
+  border-radius: 15px;
+  filter: drop-shadow(2px 4px 6px black);
+  color: white;
+  text-align: center;
+  width: 184px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.anchorButton2 {
+  text-decoration: none;
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  padding: 8px;
+  margin: 1rem;
+  border-radius: 15px;
+
+  border-radius: 15px;
+
+  filter: drop-shadow(2px 4px 6px black);
+  color: white;
+  text-align: center;
+
+  width: 184px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.videoContainer {
+  width: 1200px;
+  height: 700px;
+}
+
+/*COLOR DE MIS SECCIONES EN EL MAINS*/
+
+.colorBackground1 {
+  background-color: #24103a;
+  padding: 2rem;
+  border-top: 1px solid rgba(173, 57, 155, 0.6);
+
+  border-bottom: 1px solid rgba(173, 57, 155, 0.6);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.colorBackground2 {
+  background-color: #34124b;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(173, 57, 155, 0.4);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.colorBackground3 {
+  background-color: #24103a;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(173, 57, 155, 0.4);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.colorBackground4 {
+  background-color: #24103a;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(173, 57, 155, 0.4);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.colorBackground5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+  background-color: #34124b74;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 2rem;
+
+  border-top: 2px solid #ad399b;
+
+  border-bottom: 1px solid rgba(173, 57, 155, 0.5);
+  background-image:
+    linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)),
+    url(../Img/fondoprincipal.webp);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/*ESTE ES MI FOOTER*/
+
+.footerContainer {
+  background: #1a1026;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footerParagraphContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: end;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.imgFooter {
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+}
+
+.paragraphFooter {
+  color: rgb(254, 254, 254);
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* ESTE ES MI FORMULARIO*/
+
+.mainContainerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #24103a;
+}
+
+.textAndFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  filter: drop-shadow(2px 4px 6px black);
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  color: white;
+  width: 650px;
+
+  padding: 2.5rem;
+
+  border-radius: 20px;
+
+  background: rgba(20, 0, 40, 0.7);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid #ff4fe0;
+
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+}
+
+.formContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.inputForm {
+  padding: 1rem;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #120023;
+
+  color: white;
+
+  border: 1px solid #7b2cbf;
+}
+
+input:focus {
+  outline: none;
+
+  border-color: #ff4fe0;
+
+  box-shadow:
+    0 0 8px #ff4fe0,
+    0 0 20px #ff4fe0;
+}
+
+.buttonForm {
+  margin-top: 1rem;
+
+  padding: 1rem;
+
+  border: none;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 1.1rem;
+
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #ff00ff, #ff4fe0);
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 15px #ff00ff,
+    0 0 30px #ff00ff;
+}
+
+.labelForm {
+  display: inline-block;
+
+  margin-bottom: 0.5rem;
+
+  padding: 0.3rem 0.8rem;
+
+  border-left: 3px solid #ff4fe0;
+
+  background: rgba(255, 0, 255, 0.1);
+
+  color: white;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  font-size: 0.8rem;
+}
+
+.labelForm1 {
+  display: inline-block;
+
+  margin-bottom: 0.5rem;
+
+  padding: 0.3rem 0.8rem;
+
+  background: rgba(255, 0, 255, 0.1);
+
+  color: white;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  font-size: 0.8rem;
+}
+
+.formTitle {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+
+  font-size: 2.5rem;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 2rem;
+
+  text-shadow:
+    0 0 8px #ff4fe0,
+    0 0 20px #ff4fe0;
+}
+
+.formLink {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+
+  font-size: 25px;
+  text-align: center;
+
+  color: #ffffff;
+
+  margin-bottom: 0.8rem;
+
+  text-shadow:
+    0 0 8px #ff4fe0,
+    0 0 20px #ff4fe0;
+}
+
+.formParagraph {
+  position: relative;
+
+  text-align: center;
+
+  color: #d8d8d8;
+
+  line-height: 1.7;
+
+  max-width: 420px;
+
+  margin: 1rem auto 2rem auto;
+
+  padding: 1rem 1.5rem;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 79, 224, 0.2);
+
+  border-radius: 12px;
+
+  backdrop-filter: blur(8px);
+}
+
+.formParagraphRegistro {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+
+  font-size: 24px;
+
+  text-align: center;
+
+  color: #d8d8d8;
+
+  line-height: 1.7;
+
+  max-width: 420px;
+
+  margin: 2rem auto 2rem auto;
+
+  padding: 1rem 1.5rem;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 79, 224, 0.2);
+
+  border-radius: 12px;
+
+  backdrop-filter: blur(8px);
+}
+
+p::before {
+  color: #ff4fe0;
+
+  margin-right: 0.5rem;
+}
+
+/* ESTE ES MI MEDIA QUERIS */
+/* para escribir comentarios shortcut : ctrl+k+c  */
+
+@media (max-width: 375px) {
+  .textAndFormContainer {
+    width: unset;
+    height: unset;
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .formTitle {
+    margin: 0.8rem;
+  }
+
+  .inputForm {
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .imgFooter {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logoContainer {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    gap: 0px;
+  }
+}
+
+/* ESTA ES MI PAGINA DE COMPRAS  */
+/* ESTE ES MI MAIN DE LA PAGINA DE COMPRAS */
+
+.filterTitle {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  padding-left: 1rem;
+}
+
+.filterSubTitle {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.firstSection {
+  background-color: #34124b;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(173, 57, 155, 0.4);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+
+  background-image:
+    linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)),
+    url(../Img/fondoCompras.webp);
+}
+
+.genderFilter {
+  color: #ffffff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  gap: 1rem;
+  font-size: 12px;
+  text-align: center;
+}
+
+.checkboxStyle {
+  color: #ffffff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  gap: 1rem;
+  font-size: 12px;
+  text-align: left;
+}
+
+.productTitle {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.storeLayout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  background-color: #24103a;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(173, 57, 155, 0.4);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: center;
+
+  gap: 2rem;
+}
+
+.gameCard {
+  max-width: 200px;
+}
+
+.productGame {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.gameCardImg {
+  width: 100%;
+
+  aspect-ratio: 3/4;
+
+  object-fit: cover;
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filterGenre {
+  display: flex;
+  flex-direction: column;
+  border: #ad399b solid 2px;
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  gap: 0.5rem;
+  background-color: #1a1026;
+  box-shadow:
+    0 0 5px #ad399b,
+    0 0 10px #ad399b,
+    0 0 20px #6e2bff;
+}
+
+.buyButton {
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  background-color: black;
+  border-radius: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.buyButton:hover {
+  background: #ff00ff;
+  color: #000;
+  box-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff;
+}
+
+/* ESTA ES MI PAGINA DE PERFIL */
+
+/* SECCIÓN PERFIL */
+
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 2rem;
+}
+
+.profileCards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-self: auto;
+  margin-left: 20rem;
+}
+
+.profileImg {
+  border-radius: 132px;
+}
+
+.profileName {
+  color: #ffffff !important;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.profileButton {
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  background-color: transparent;
+  padding: 8px;
+  margin-top: 1rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  width: 114px;
+  align-self: center;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 10px;
+}
+
+.profileButton:hover {
+  background: #ff00ff;
+  color: #000;
+  box-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff;
+}
+
+.profileBio {
+  color: #ffffff !important;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.card {
+  border: #ad399b solid 2px;
+  border-radius: 10px;
+  background-color: #1a1026 !important;
+  box-shadow:
+    0 0 5px #ad399b,
+    0 0 10px #ad399b,
+    0 0 20px #6e2bff;
+  width: 12rem;
+  min-height: 10rem;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-title {
+  color: #ffffff !important;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+}
+.fa-gamepad {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+
+.fa-trophy {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+
+.fa-clock {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+
+.fa-star1 {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+
+.star-icon {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+
+.card-text {
+  color: #ffffff !important;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* SECCIÓN DE ACTIVIDAD */
+
+.list-group-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1a1026 !important;
+  color: #ffffff !important;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  border-bottom: none !important;
+  box-shadow:
+    0 0 5px #ad399b,
+    0 0 10px #ad399b,
+    0 0 20px #6e2bff;
+}
+
+.list-group-item-primary {
+  color: #ffffff !important;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+}
+.list-group-item-secondary {
+  display: flex !important;
+  flex-direction: row;
+}
+
+.jugadosTitle {
+  color: #ffffff !important;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.activityLayout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 4rem;
+}
+
+.activityContent {
+  margin: 0.5rem;
+  text-align: left;
+}
+
+.activityText {
+  color: #ffffff !important;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  margin-bottom: 0rem;
+}
+
+.activityText1 {
+  color: #ff4ddb !important;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  margin-bottom: 0rem;
+}
+.fa-star-half-stroke {
+  color: #ff4fe0;
+}
+
+.fa-heart-circle-plus {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+
+.fa-face-grin-hearts {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+.fa-chess-knight {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+
+.fa-money-bill-1 {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
+
+.cardLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
