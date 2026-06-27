@@ -1,0 +1,53 @@
+@use "../utilities/variable" as v;
+@use "../utilities/mixins" as m;
+
+.mainHeader {
+  background-color: v.$bg-primary;
+  background-repeat: no-repeat;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  gap: 2rem;
+
+  @include m.flex(row, center);
+
+  .arcadiaTitle {
+    font-family: v.$fuente1;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+  }
+  .mainNav {
+    .listContainer {
+      gap: 1rem;
+      list-style-type: none;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      padding-inline-start: 0px;
+      @include m.flex(row, center);
+      .listStyle {
+        border-right: 2px solid v.$font-color-primary;
+        padding-right: 1rem;
+        .mainLinks {
+          font-family: v.$fuente2;
+          text-decoration: none;
+          color: v.$font-color-primary;
+          font-weight: 900;
+          font-style: normal;
+          font-size: 16px;
+          text-transform: capitalize;
+          &:hover {
+            color: v.$brand-color;
+          }
+        }
+      }
+    }
+  }
+}

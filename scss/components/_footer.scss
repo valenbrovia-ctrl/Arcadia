@@ -1,0 +1,37 @@
+@use "../utilities/variable" as v;
+@use "../utilities/mixins" as m;
+
+.footerContainer {
+  @include m.flex(row, center);
+  background: v.$bg-primary;
+
+  .footerParagraphContainer {
+    width: 100%;
+    .paragraphFooter {
+      font-family: v.$fuente2;
+      color: v.$font-color-primary;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 16px;
+      text-align: center;
+    }
+    @include m.flex(column, center);
+  }
+  .logoContainer {
+    gap: 1rem;
+    justify-content: end;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    @include m.flex(column, unset);
+
+    .footerLinks {
+      .imgFooter {
+        width: 40px;
+        height: 40px;
+        filter: invert(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@mixin flex($dir, $ai) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $ai;
+}

@@ -1,0 +1,138 @@
+@use "../utilities/variable" as v;
+@use "../utilities/mixins" as m;
+
+.profileContainer {
+  .profileCards {
+    @include m.flex(row, unset);
+    gap: 2rem;
+    align-self: auto;
+    margin-left: 20rem;
+    .card {
+      border: #ad399b solid 2px;
+      border-radius: 10px;
+      background-color: #1a1026;
+      box-shadow:
+        0 0 5px #ad399b,
+        0 0 10px #ad399b,
+        0 0 20px #6e2bff;
+      width: 12rem;
+      min-height: 10rem;
+
+      .card-body {
+        padding: 1rem;
+        @include m.flex(column, center);
+        gap: 1rem;
+        .card-title {
+          color: v.$font-color-primary;
+          font-family: v.$fuente2;
+          font-optical-sizing: auto;
+          font-weight: 900;
+          font-style: normal;
+          font-size: 16px;
+          text-align: center;
+        }
+        .fa.gamepad {
+          color: #ff4fe0;
+          font-size: 2rem;
+        }
+        .card-text {
+          color: v.$font-color-primary;
+          font-family: v.$fuente2;
+          font-optical-sizing: auto;
+          font-weight: 900;
+          font-style: normal;
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .profileImg {
+    border-radius: 132px;
+  }
+  @include m.flex(row, unset);
+  gap: 2rem;
+  justify-content: left;
+  background-color: v.$bg-secondary;
+  padding: 2rem;
+  border-top: 1px solid rgba(173, 57, 155, 0.6);
+  border-bottom: 1px solid rgba(173, 57, 155, 0.6);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+
+  .profileTextContainer {
+    .profileName {
+      color: v.$font-color-primary;
+      font-family: v.$fuente2;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 30px;
+    }
+
+    .profileBio {
+      color: v.$font-color-primary;
+      font-family: v.$fuente3;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+    }
+    .profileButton {
+      border: 2px solid v.$brand-color;
+      color: v.$brand-color;
+      background-color: transparent;
+      padding: 8px;
+      margin-top: 1rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      width: 114px;
+      align-self: center;
+      text-decoration: none;
+      font-family: v.$fuente2;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 10px;
+      &:hover {
+        background: v.$brand-color;
+        color: v.$black;
+        box-shadow:
+          0 0 10px v.$brand-color,
+          0 0 20px v.$brand-color;
+      }
+    }
+  }
+}
+
+.activityLayout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 4rem;
+  background-color: v.$bg-secondary;
+  padding: 2rem;
+  border-top: 1px solid rgba(173, 57, 155, 0.6);
+  border-bottom: 1px solid rgba(173, 57, 155, 0.6);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+
+  .cardLayout {
+    @include m.flex(column, unset);
+    gap: 4rem;
+
+    .list-group-item {
+      @include m.flex(row, center);
+      gap: 1rem;
+      background-color: v.$bg-primary;
+      color: v.$font-color-primary;
+      font-family: v.$fuente3;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      border-bottom: none;
+      box-shadow:
+        0 0 5px #ad399b,
+        0 0 10px #ad399b,
+        0 0 20px #6e2bff;
+    }
+  }
+}
