@@ -2,6 +2,15 @@
 @use "../utilities/mixins" as m;
 
 .profileContainer {
+  @include m.flex(row, unset);
+  gap: 2rem;
+  justify-content: left;
+  background-color: v.$bg-secondary;
+  padding: 2rem;
+  border-top: 1px solid rgba(173, 57, 155, 0.6);
+  border-bottom: 1px solid rgba(173, 57, 155, 0.6);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+
   .profileCards {
     @include m.flex(row, unset);
     gap: 2rem;
@@ -22,6 +31,15 @@
         padding: 1rem;
         @include m.flex(column, center);
         gap: 1rem;
+
+        .fa-gamepad,
+        .fa-trophy,
+        .fa-clock,
+        .fa-star1,
+        .star-icon {
+          color: #ff4fe0;
+          font-size: 2rem;
+        }
         .card-title {
           color: v.$font-color-primary;
           font-family: v.$fuente2;
@@ -31,10 +49,7 @@
           font-size: 16px;
           text-align: center;
         }
-        .fa.gamepad {
-          color: #ff4fe0;
-          font-size: 2rem;
-        }
+
         .card-text {
           color: v.$font-color-primary;
           font-family: v.$fuente2;
@@ -44,20 +59,17 @@
           font-size: 25px;
           text-align: center;
         }
+        .estrellas {
+          .fa-star {
+            color: v.$brand-color;
+          }
+        }
       }
     }
   }
   .profileImg {
     border-radius: 132px;
   }
-  @include m.flex(row, unset);
-  gap: 2rem;
-  justify-content: left;
-  background-color: v.$bg-secondary;
-  padding: 2rem;
-  border-top: 1px solid rgba(173, 57, 155, 0.6);
-  border-bottom: 1px solid rgba(173, 57, 155, 0.6);
-  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
 
   .profileTextContainer {
     .profileName {
@@ -118,21 +130,130 @@
     @include m.flex(column, unset);
     gap: 4rem;
 
-    .list-group-item {
-      @include m.flex(row, center);
-      gap: 1rem;
-      background-color: v.$bg-primary;
-      color: v.$font-color-primary;
-      font-family: v.$fuente3;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
-      font-size: 16px;
-      border-bottom: none;
+    .card {
+      border: #ad399b solid 2px;
+      border-radius: 10px;
+      background-color: #1a1026;
       box-shadow:
         0 0 5px #ad399b,
         0 0 10px #ad399b,
         0 0 20px #6e2bff;
+      width: 12rem;
+      min-height: 10rem;
+
+      .list-group-item {
+        align-items: center;
+        gap: 1rem;
+        background-color: #1a1026;
+        color: #ffffff;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        border-bottom: none;
+        box-shadow:
+          0 0 5px #ad399b,
+          0 0 10px #ad399b,
+          0 0 20px #6e2bff;
+      }
+
+      .list-group-item-primary {
+        color: #ffffff;
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .list-group-item-secondary {
+        @include m.flex(row, unset);
+      }
+
+      .fa-heart-circle-plus,
+      .fa-face-grin-hearts,
+      .fa-chess-knight,
+      .fa-money-bill-1,
+      .fa-trophy,
+      .star-icon {
+        color: v.$brand-color;
+        font-size: 2rem;
+      }
+
+      .activityContent {
+        .activityText {
+          color: #ffffff;
+          font-family: "IBM Plex Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 15px;
+          margin-bottom: 0rem;
+        }
+        .activityText1 {
+          color: #ff4ddb;
+          font-family: "IBM Plex Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 12px;
+          margin-bottom: 0rem;
+        }
+
+        .fa-star,
+        .fa-star-half-stroke {
+          color: #ff4fe0;
+        }
+      }
+    }
+  }
+  .jugadosRecientemente {
+    .jugadosTitle {
+      color: v.$font-color-primary;
+      font-family: v.$fuente2;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .gamesGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      justify-items: center;
+      gap: 2rem;
+      .gameCard {
+        max-width: 200px;
+        .gameCardImg {
+          width: 100%;
+          aspect-ratio: 3/4;
+          object-fit: cover;
+          border-radius: 10%;
+        }
+
+        .productGame {
+          color: v.$font-color-primary;
+          font-family: v.$fuente2;
+          font-optical-sizing: auto;
+          font-weight: 900;
+
+          font-size: 15px;
+          text-align: center;
+          margin-top: 0.5rem;
+        }
+        .genderFilter {
+          color: v.$font-color-primary;
+          font-family: v.$fuente3;
+          font-optical-sizing: auto;
+          font-weight: 500;
+
+          gap: 1rem;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
     }
   }
 }

@@ -235,6 +235,181 @@
   font-size: 15px;
 }
 
+.firstSectionContainer {
+  padding: 1rem;
+  border-top: 2px solid #ad399b;
+  border-bottom: 2px solid #ad399b;
+  width: 100%;
+  background-color: #24103a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../Img/fondoprincipal.webp);
+}
+.firstSectionContainer .mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.firstSectionContainer .mainContainer .titleStyle {
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 38px;
+  margin: 0px;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.firstSectionContainer .mainContainer .paragraphStyle {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  gap: 1rem;
+  font-size: 20px;
+  text-align: center;
+}
+.firstSectionContainer .buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: unset;
+  gap: 2rem;
+}
+.firstSectionContainer .buttonContainer .anchorButton1,
+.firstSectionContainer .buttonContainer .anchorButton2 {
+  text-decoration: none;
+  padding: 5px;
+  color: #ff00ff;
+  background-color: #ff00ff;
+  margin: 1rem;
+  border-radius: 15px;
+  filter: drop-shadow(2px 4px 6px #000000);
+  color: #ffffff;
+  text-align: center;
+  width: 184px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #24103a;
+  padding: 2rem;
+  border-top: 1px solid #ad399b;
+  border-bottom: 1px solid #ad399b;
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.2509803922);
+}
+.sectionContainer .textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionContainer .textContainer .titleStyle {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 38px;
+  margin: 0px;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.sectionContainer .gamesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: unset;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap: 2rem;
+}
+.sectionContainer .gamesContainer .styledVideo {
+  border: 1px solid #52246f;
+  border-radius: 15px;
+  background-color: #1a1026;
+  box-shadow: 0 0 5px #ad399b, 0 0 10px #ad399b, 0 0 20px #6e2bff;
+}
+.sectionContainer .gamesContainer .styledVideo .videoContainer .video {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+.sectionContainer .gamesContainer .styledGame {
+  border: 1px solid #52246f;
+  border-radius: 15px;
+  background-color: #1a1026;
+  box-shadow: 0 0 5px #ad399b, 0 0 10px #ad399b, 0 0 20px #6e2bff;
+}
+.sectionContainer .gamesContainer .styledGame .imgAndTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  width: 300px;
+}
+.sectionContainer .gamesContainer .styledGame .imgAndTextContainer .imgPopular {
+  padding: 1rem;
+  border-radius: 25px;
+  height: 400px;
+  width: 300px;
+}
+.sectionContainer .gamesContainer .styledGame .imgAndTextContainer .imgAndStars {
+  margin-bottom: 1rem;
+}
+.sectionContainer .gamesContainer .styledGame .imgAndTextContainer .imgAndStars .userAvatar {
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.sectionContainer .gamesContainer .styledGame .imgAndTextContainer .imgAndStars .fa-star {
+  color: #ff00ff;
+}
+.sectionContainer .gamesContainer .styledGame .imgAndTextContainer .titleStyleGame {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0px;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+.sectionContainer .gamesContainer .styledGame .imgAndTextContainer .buyLink {
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  padding: 8px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  background: transparent;
+  width: 114px;
+  align-self: center;
+  margin-bottom: 16px;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 20px;
+}
+.sectionContainer .gamesContainer .styledGame .imgAndTextContainer .buyLink.buyLink:hover {
+  background: #ff00ff;
+  color: #000000;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
 .mainContainerForm {
   background-color: #24103a;
   display: flex;
@@ -341,6 +516,18 @@
   text-shadow: 0 0 8px #ff4fe0, 0 0 20px #ff4fe0;
 }
 
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: unset;
+  gap: 2rem;
+  justify-content: left;
+  background-color: #24103a;
+  padding: 2rem;
+  border-top: 1px solid rgba(173, 57, 155, 0.6);
+  border-bottom: 1px solid rgba(173, 57, 155, 0.6);
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
 .profileContainer .profileCards {
   display: flex;
   flex-direction: row;
@@ -364,6 +551,14 @@
   align-items: center;
   gap: 1rem;
 }
+.profileContainer .profileCards .card .card-body .fa-gamepad,
+.profileContainer .profileCards .card .card-body .fa-trophy,
+.profileContainer .profileCards .card .card-body .fa-clock,
+.profileContainer .profileCards .card .card-body .fa-star1,
+.profileContainer .profileCards .card .card-body .star-icon {
+  color: #ff4fe0;
+  font-size: 2rem;
+}
 .profileContainer .profileCards .card .card-body .card-title {
   color: #ffffff;
   font-family: "Orbitron", sans-serif;
@@ -372,10 +567,6 @@
   font-style: normal;
   font-size: 16px;
   text-align: center;
-}
-.profileContainer .profileCards .card .card-body .fa.gamepad {
-  color: #ff4fe0;
-  font-size: 2rem;
 }
 .profileContainer .profileCards .card .card-body .card-text {
   color: #ffffff;
@@ -386,20 +577,11 @@
   font-size: 25px;
   text-align: center;
 }
+.profileContainer .profileCards .card .card-body .estrellas .fa-star {
+  color: #ff00ff;
+}
 .profileContainer .profileImg {
   border-radius: 132px;
-}
-.profileContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: unset;
-  gap: 2rem;
-  justify-content: left;
-  background-color: #24103a;
-  padding: 2rem;
-  border-top: 1px solid rgba(173, 57, 155, 0.6);
-  border-bottom: 1px solid rgba(173, 57, 155, 0.6);
-  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
 }
 .profileContainer .profileTextContainer .profileName {
   color: #ffffff;
@@ -456,9 +638,15 @@
   align-items: unset;
   gap: 4rem;
 }
-.activityLayout .cardLayout .list-group-item {
-  display: flex;
-  flex-direction: row;
+.activityLayout .cardLayout .card {
+  border: #ad399b solid 2px;
+  border-radius: 10px;
+  background-color: #1a1026;
+  box-shadow: 0 0 5px #ad399b, 0 0 10px #ad399b, 0 0 20px #6e2bff;
+  width: 12rem;
+  min-height: 10rem;
+}
+.activityLayout .cardLayout .card .list-group-item {
   align-items: center;
   gap: 1rem;
   background-color: #1a1026;
@@ -470,6 +658,93 @@
   font-size: 16px;
   border-bottom: none;
   box-shadow: 0 0 5px #ad399b, 0 0 10px #ad399b, 0 0 20px #6e2bff;
+}
+.activityLayout .cardLayout .card .list-group-item-primary {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+}
+.activityLayout .cardLayout .card .list-group-item-secondary {
+  display: flex;
+  flex-direction: row;
+  align-items: unset;
+}
+.activityLayout .cardLayout .card .fa-heart-circle-plus,
+.activityLayout .cardLayout .card .fa-face-grin-hearts,
+.activityLayout .cardLayout .card .fa-chess-knight,
+.activityLayout .cardLayout .card .fa-money-bill-1,
+.activityLayout .cardLayout .card .fa-trophy,
+.activityLayout .cardLayout .card .star-icon {
+  color: #ff00ff;
+  font-size: 2rem;
+}
+.activityLayout .cardLayout .card .activityContent .activityText {
+  color: #ffffff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  margin-bottom: 0rem;
+}
+.activityLayout .cardLayout .card .activityContent .activityText1 {
+  color: #ff4ddb;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  margin-bottom: 0rem;
+}
+.activityLayout .cardLayout .card .activityContent .fa-star,
+.activityLayout .cardLayout .card .activityContent .fa-star-half-stroke {
+  color: #ff4fe0;
+}
+.activityLayout .jugadosRecientemente .jugadosTitle {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.activityLayout .jugadosRecientemente .gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+.activityLayout .jugadosRecientemente .gamesGrid .gameCard {
+  max-width: 200px;
+}
+.activityLayout .jugadosRecientemente .gamesGrid .gameCard .gameCardImg {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 10%;
+}
+.activityLayout .jugadosRecientemente .gamesGrid .gameCard .productGame {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.activityLayout .jugadosRecientemente .gamesGrid .gameCard .genderFilter {
+  color: #ffffff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  gap: 1rem;
+  font-size: 12px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
