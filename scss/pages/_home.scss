@@ -41,30 +41,6 @@
       text-align: center;
     }
   }
-
-  .buttonContainer {
-    @include m.flex(row, unset);
-    gap: 2rem;
-
-    .anchorButton1,
-    .anchorButton2 {
-      text-decoration: none;
-      padding: 5px;
-      color: v.$brand-color;
-      background-color: v.$brand-color;
-
-      margin: 1rem;
-      border-radius: 15px;
-      filter: drop-shadow(2px 4px 6px v.$black);
-      color: v.$font-color-primary;
-      text-align: center;
-      width: 184px;
-      font-family: v.$fuente2;
-      font-optical-sizing: auto;
-      font-weight: 900;
-      font-size: 12px;
-    }
-  }
 }
 
 .sectionContainer {
@@ -97,22 +73,6 @@
     margin-left: 1rem;
     margin-right: 1rem;
     gap: 2rem;
-
-    .styledVideo {
-      border: 1px solid #52246f;
-      border-radius: 15px;
-      background-color: v.$bg-primary;
-      box-shadow:
-        0 0 5px #ad399b,
-        0 0 10px #ad399b,
-        0 0 20px #6e2bff;
-      .videoContainer {
-        .video {
-          height: -webkit-fill-available;
-          width: -webkit-fill-available;
-        }
-      }
-    }
 
     .styledGame {
       border: 1px solid #52246f;
@@ -186,6 +146,11 @@
           }
         }
       }
+    }
+  }
+  @include m.mobile {
+    .gamesContainer {
+      @include m.flex(column, center);
     }
   }
 }
