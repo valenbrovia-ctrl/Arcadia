@@ -12,7 +12,7 @@
   background-size: cover;
   background-image:
     linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)),
-    url(../Img/fondoprincipal.webp);
+    url(../../Img/fondoPrincipal.webp);
 
   .mainContainer {
     @include m.flex(column, baseline);
