@@ -150,4 +150,11 @@
       }
     }
   }
+  @include m.mobile {
+    @include m.flex(column, center);
+
+    .filterContainer {
+      display: none;
+    }
+  }
 }
