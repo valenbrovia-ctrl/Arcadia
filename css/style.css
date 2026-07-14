@@ -97,7 +97,7 @@
   padding: 2rem;
   border-bottom: 1px solid rgba(173, 57, 155, 0.4);
   box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../Img/fondoCompras.webp);
+  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../../Img/fondoCompras.webp);
 }
 .firstSection .titleStyle {
   font-family: "Orbitron", sans-serif;
@@ -246,7 +246,7 @@
   align-items: center;
   background-position: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../Img/fondoprincipal.webp);
+  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../../Img/fondoPrincipal.webp);
 }
 .firstSectionContainer .mainContainer {
   display: flex;
