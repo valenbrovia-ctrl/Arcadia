@@ -114,6 +114,79 @@
       }
     }
   }
+  @include m.mobile {
+    @include m.flex(column, center);
+
+    gap: 1rem;
+
+    .profileImg {
+      witdh: 100px;
+    }
+
+    .profileTextContainer {
+      text-align: center;
+
+      .profileName {
+        font-size: 15px;
+      }
+
+      .profileBio {
+        font-size: 10px;
+      }
+
+      .profileButton {
+        padding: unset;
+
+        margin-top: unset;
+      }
+    }
+
+    .profileCards {
+      @include m.flex(row, center);
+
+      margin-left: unset;
+
+      gap: 8px;
+
+      .card {
+        margin-bottom: unset;
+
+        width: 5rem;
+
+        min-height: 6rem;
+
+        .card-body {
+          gap: unset;
+
+          .card-title {
+            margin-bottom: 0px;
+
+            font-size: 7.5px;
+          }
+
+          .card-text {
+            margin-bottom: 0px;
+
+            font-size: 15px;
+          }
+
+          .estrellas {
+            .fa-star {
+              font-size: 1rem;
+            }
+          }
+
+          .fa-gamepad,
+          .fa-trophy,
+          .fa-clock,
+          .fa-star1,
+          .star-icon {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .activityLayout {

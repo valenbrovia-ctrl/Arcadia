@@ -12,6 +12,9 @@
 }
 .footerContainer .footerParagraphContainer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footerContainer .footerParagraphContainer .paragraphFooter {
   font-family: "Orbitron", sans-serif;
@@ -21,11 +24,6 @@
   font-style: normal;
   font-size: 16px;
   text-align: center;
-}
-.footerContainer .footerParagraphContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .footerContainer .logoContainer {
   gap: 1rem;
@@ -604,6 +602,63 @@
   background: #ff00ff;
   color: #000000;
   box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+@media (min-width: 300px) and (max-width: 525px) {
+  .profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .profileContainer .profileImg {
+    witdh: 100px;
+  }
+  .profileContainer .profileTextContainer {
+    text-align: center;
+  }
+  .profileContainer .profileTextContainer .profileName {
+    font-size: 15px;
+  }
+  .profileContainer .profileTextContainer .profileBio {
+    font-size: 10px;
+  }
+  .profileContainer .profileTextContainer .profileButton {
+    padding: unset;
+    margin-top: unset;
+  }
+  .profileContainer .profileCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: unset;
+    gap: 8px;
+  }
+  .profileContainer .profileCards .card {
+    margin-bottom: unset;
+    width: 5rem;
+    min-height: 6rem;
+  }
+  .profileContainer .profileCards .card .card-body {
+    gap: unset;
+  }
+  .profileContainer .profileCards .card .card-body .card-title {
+    margin-bottom: 0px;
+    font-size: 7.5px;
+  }
+  .profileContainer .profileCards .card .card-body .card-text {
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+  .profileContainer .profileCards .card .card-body .estrellas .fa-star {
+    font-size: 1rem;
+  }
+  .profileContainer .profileCards .card .card-body .fa-gamepad,
+  .profileContainer .profileCards .card .card-body .fa-trophy,
+  .profileContainer .profileCards .card .card-body .fa-clock,
+  .profileContainer .profileCards .card .card-body .fa-star1,
+  .profileContainer .profileCards .card .card-body .star-icon {
+    font-size: 1rem;
+  }
 }
 
 .activityLayout {
