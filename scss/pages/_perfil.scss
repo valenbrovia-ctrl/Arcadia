@@ -120,7 +120,7 @@
     gap: 1rem;
 
     .profileImg {
-      witdh: 100px;
+      width: 150px;
     }
 
     .profileTextContainer {
@@ -171,8 +171,9 @@
           }
 
           .estrellas {
+            font-size: 10px;
             .fa-star {
-              font-size: 1rem;
+              font-size: 5px;
             }
           }
 
@@ -325,6 +326,39 @@
           gap: 1rem;
           font-size: 12px;
           text-align: center;
+        }
+      }
+    }
+  }
+  @include m.mobile {
+    @include m.flex(column, center);
+    gap: 1rem;
+    padding: 1rem;
+
+    .jugadosRecientemente {
+      @include m.flex(column, center);
+      width: 400px;
+      .jugadosTitle {
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+      .gamesGrid {
+        @include m.flex(row, center);
+        justify-content: center;
+        gap: 10px;
+        width: 400px;
+        .gameCard {
+          max-width: 60px;
+          .productGame {
+            font-size: 8px;
+
+            margin-bottom: 0.5px;
+          }
+          .genderFilter {
+            font-size: 8px;
+            margin-top: 0.5px;
+            margin-bottom: 0.5px;
+          }
         }
       }
     }
