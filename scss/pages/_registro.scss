@@ -111,4 +111,45 @@
       }
     }
   }
+  @include m.mobile {
+    .textAndFormContainer {
+      margin: 1rem;
+      width: 330px;
+      padding: 1.5rem;
+
+      .formTitle {
+        font-size: 20px;
+        margin-bottom: 1rem;
+      }
+
+      .formContainer {
+        .labelForm {
+          font-size: 10px;
+        }
+        .inputForm {
+          height: 25px;
+          margin-bottom: 5px;
+        }
+
+        .termsContainer {
+          .labelForm1 {
+            font-size: 10px;
+          }
+        }
+
+        .buttonForm {
+          font-size: 20px;
+        }
+
+        .formParagraphRegistro {
+          font-size: 15px;
+          margin: 10px;
+        }
+
+        .formLink {
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }

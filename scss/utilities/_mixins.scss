@@ -3,3 +3,16 @@
   flex-direction: $dir;
   align-items: $ai;
 }
+
+// TABLET
+@mixin tablet {
+  @media (min-width: 526px) and (max-width: 967px) {
+    @content;
+  }
+}
+// MOBILE
+@mixin mobile {
+  @media (min-width: 300px) and (max-width: 525px) {
+    @content;
+  }
+}

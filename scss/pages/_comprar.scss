@@ -16,7 +16,6 @@
     font-weight: 900;
     font-style: normal;
     font-size: 38px;
-    margin: 0px;
     color: v.$font-color-primary;
     text-align: center;
     padding: 1rem;
@@ -33,6 +32,17 @@
     gap: 1rem;
     font-size: 20px;
     text-align: center;
+  }
+  @include m.mobile {
+    padding: 1rem;
+    .titleStyle {
+      font-size: 30px;
+      margin-bottom: 0px;
+    }
+    .paragraphStyle {
+      font-size: 15px;
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -146,6 +156,44 @@
           font-weight: 900;
           font-style: normal;
           font-size: 15px;
+          &:hover {
+            background: v.$brand-color;
+            color: v.$black;
+            box-shadow:
+              0 0 10px v.$brand-color,
+              0 0 20px v.$brand-color;
+          }
+        }
+      }
+    }
+  }
+  @include m.mobile {
+    @include m.flex(column, center);
+    padding: 1rem;
+
+    .filterContainer {
+      display: none;
+    }
+    .productContainer {
+      .productTitle {
+        font-size: 25px;
+        margin-bottom: 1rem;
+      }
+      .gamesGrid {
+        gap: 1rem;
+        .gameCard {
+          max-width: 150px;
+          .productGame {
+            font-size: 12px;
+          }
+          .genderFilter {
+            font-size: 10px;
+            margin-bottom: 5px;
+          }
+
+          .buyButton {
+            font-size: 10px;
+          }
         }
       }
     }
