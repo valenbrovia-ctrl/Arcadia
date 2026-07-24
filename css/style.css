@@ -571,6 +571,36 @@
   margin-bottom: 0.8rem;
   text-shadow: 0 0 8px #ff4fe0, 0 0 20px #ff4fe0;
 }
+@media (min-width: 300px) and (max-width: 525px) {
+  .mainContainerForm .textAndFormContainer {
+    margin: 1rem;
+    width: 330px;
+  }
+  .mainContainerForm .textAndFormContainer .formTitle {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .mainContainerForm .textAndFormContainer .formContainer .labelForm {
+    font-size: 10px;
+  }
+  .mainContainerForm .textAndFormContainer .formContainer .inputForm {
+    height: 25px;
+    margin-bottom: 5px;
+  }
+  .mainContainerForm .textAndFormContainer .formContainer .termsContainer .labelForm1 {
+    font-size: 10px;
+  }
+  .mainContainerForm .textAndFormContainer .formContainer .buttonForm {
+    font-size: 20px;
+  }
+  .mainContainerForm .textAndFormContainer .formContainer .formParagraphRegistro {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .mainContainerForm .textAndFormContainer .formContainer .formLink {
+    font-size: 15px;
+  }
+}
 
 .profileContainer {
   display: flex;
