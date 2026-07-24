@@ -401,29 +401,29 @@
     flex-direction: column;
     align-items: center;
   }
-  .sectionContainer .gamesContainer .styledGame imgAndTextContainer {
+  .sectionContainer .gamesContainer .styledGame .imgAndTextContainer {
     align-items: center;
     width: 200px;
   }
-  .sectionContainer .gamesContainer .styledGame imgAndTextContainer imgPopular {
+  .sectionContainer .gamesContainer .styledGame .imgAndTextContainer .imgPopular {
     width: 200px;
     height: 250px;
   }
-  .sectionContainer .gamesContainer .styledGame imgAndTextContainer .titleStyleGame {
+  .sectionContainer .gamesContainer .styledGame .imgAndTextContainer .titleStyleGame {
     padding: 0px;
     margin-bottom: 10px;
     font-size: 12px;
   }
-  .sectionContainer .gamesContainer .styledGame imgAndTextContainer .buyLink {
+  .sectionContainer .gamesContainer .styledGame .imgAndTextContainer .buyLink {
     font-size: 10px;
     padding: 5px;
     width: unset;
     border-radius: 10px;
   }
-  .sectionContainer .gamesContainer .styledGame imgAndTextContainer imgAndStars .userAvatar {
+  .sectionContainer .gamesContainer .styledGame .imgAndTextContainer .imgAndStars .userAvatar {
     width: 30px;
   }
-  .sectionContainer .gamesContainer .styledGame imgAndTextContainer imgAndStars .fa-star {
+  .sectionContainer .gamesContainer .styledGame .imgAndTextContainer .imgAndStars .fa-star {
     font-size: 13px;
   }
 }

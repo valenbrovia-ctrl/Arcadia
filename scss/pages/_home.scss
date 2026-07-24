@@ -167,10 +167,10 @@
     .gamesContainer {
       @include m.flex(column, center);
       .styledGame {
-        imgAndTextContainer {
+        .imgAndTextContainer {
           align-items: center;
           width: 200px;
-          imgPopular {
+          .imgPopular {
             width: 200px;
             height: 250px;
           }
@@ -187,7 +187,7 @@
             border-radius: 10px;
           }
 
-          imgAndStars {
+          .imgAndStars {
             .userAvatar {
               width: 30px;
             }
