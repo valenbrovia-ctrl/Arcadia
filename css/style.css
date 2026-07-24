@@ -103,7 +103,6 @@
   font-weight: 900;
   font-style: normal;
   font-size: 38px;
-  margin: 0px;
   color: #ffffff;
   text-align: center;
   padding: 1rem;
@@ -119,6 +118,19 @@
   gap: 1rem;
   font-size: 20px;
   text-align: center;
+}
+@media (min-width: 300px) and (max-width: 525px) {
+  .firstSection {
+    padding: 1rem;
+  }
+  .firstSection .titleStyle {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .firstSection .paragraphStyle {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
 }
 
 .storeLayout {
@@ -232,14 +244,40 @@
   font-style: normal;
   font-size: 15px;
 }
+.storeLayout .productContainer .gamesGrid .gameCard .buyButton:hover {
+  background: #ff00ff;
+  color: #000000;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
 @media (min-width: 300px) and (max-width: 525px) {
   .storeLayout {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
   }
   .storeLayout .filterContainer {
     display: none;
+  }
+  .storeLayout .productContainer .productTitle {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .storeLayout .productContainer .gamesGrid {
+    gap: 1rem;
+  }
+  .storeLayout .productContainer .gamesGrid .gameCard {
+    max-width: 150px;
+  }
+  .storeLayout .productContainer .gamesGrid .gameCard .productGame {
+    font-size: 12px;
+  }
+  .storeLayout .productContainer .gamesGrid .gameCard .genderFilter {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .storeLayout .productContainer .gamesGrid .gameCard .buyButton {
+    font-size: 10px;
   }
 }
 
