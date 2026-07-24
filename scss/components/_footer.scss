@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as m;
 
 .footerContainer {
-  @include m.flex(row, unset);
+  @include m.flex(row, center);
   background: v.$bg-primary;
 
   .footerParagraphContainer {

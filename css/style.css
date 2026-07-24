@@ -7,7 +7,7 @@
 .footerContainer {
   display: flex;
   flex-direction: row;
-  align-items: unset;
+  align-items: center;
   background: #1a1026;
 }
 .footerContainer .footerParagraphContainer {
