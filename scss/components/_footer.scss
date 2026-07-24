@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as m;
 
 .footerContainer {
-  @include m.flex(row, center);
+  @include m.flex(row, unset);
   background: v.$bg-primary;
 
   .footerParagraphContainer {
@@ -31,6 +31,22 @@
         width: 40px;
         height: 40px;
         filter: invert(1);
+      }
+    }
+  }
+  @include m.mobile {
+    .footerParagraphContainer {
+      .paragraphFooter {
+        font-size: 12px;
+      }
+      .logoContainer {
+        gap: 10px;
+        .footerLinks {
+          .imgFooter {
+            width: 30px;
+            height: 25px;
+          }
+        }
       }
     }
   }
