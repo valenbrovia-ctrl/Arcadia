@@ -800,6 +800,9 @@
     gap: 1rem;
     align-items: center;
   }
+  .activityLayout .cardLayout .style {
+    width: 12rem;
+  }
   .activityLayout .cardLayout .card {
     width: 12rem;
   }

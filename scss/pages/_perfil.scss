@@ -338,6 +338,9 @@
     .cardLayout {
       gap: 1rem;
       align-items: center;
+      .style {
+        width: 12rem;
+      }
       .card {
         width: 12rem;
         .list-group-item-primary {
