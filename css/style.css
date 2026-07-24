@@ -12,6 +12,9 @@
 }
 .footerContainer .footerParagraphContainer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footerContainer .footerParagraphContainer .paragraphFooter {
   font-family: "Orbitron", sans-serif;
@@ -21,11 +24,6 @@
   font-style: normal;
   font-size: 16px;
   text-align: center;
-}
-.footerContainer .footerParagraphContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .footerContainer .logoContainer {
   gap: 1rem;
