@@ -575,6 +575,7 @@
   .mainContainerForm .textAndFormContainer {
     margin: 1rem;
     width: 330px;
+    padding: 1.5rem;
   }
   .mainContainerForm .textAndFormContainer .formTitle {
     font-size: 20px;
