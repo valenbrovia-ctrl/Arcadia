@@ -796,6 +796,34 @@
     gap: 1rem;
     padding: 1rem;
   }
+  .activityLayout .cardLayout {
+    gap: 1rem;
+    align-items: center;
+  }
+  .activityLayout .cardLayout .card {
+    width: 12rem;
+  }
+  .activityLayout .cardLayout .card .list-group-item-primary {
+    font-size: 13px;
+  }
+  .activityLayout .cardLayout .card .list-group-item-secondary {
+    align-items: center;
+  }
+  .activityLayout .cardLayout .card .list-group-item-secondary .fa-heart-circle-plus,
+  .activityLayout .cardLayout .card .list-group-item-secondary .fa-face-grin-hearts,
+  .activityLayout .cardLayout .card .list-group-item-secondary .fa-chess-knight,
+  .activityLayout .cardLayout .card .list-group-item-secondary .fa-money-bill-1,
+  .activityLayout .cardLayout .card .list-group-item-secondary .fa-trophy,
+  .activityLayout .cardLayout .card .list-group-item-secondary .star-icon {
+    color: #ff00ff;
+    font-size: 1rem;
+  }
+  .activityLayout .cardLayout .card .list-group-item-secondary .activityContent activityText {
+    font-size: 10px;
+  }
+  .activityLayout .cardLayout .card .list-group-item-secondary .activityContent activityText1 {
+    font-size: 10px;
+  }
   .activityLayout .jugadosRecientemente {
     display: flex;
     flex-direction: column;
