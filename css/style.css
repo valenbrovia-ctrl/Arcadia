@@ -44,10 +44,10 @@
   .footerContainer .footerParagraphContainer .paragraphFooter {
     font-size: 12px;
   }
-  .footerContainer .footerParagraphContainer .logoContainer {
+  .footerContainer .logoContainer {
     gap: 10px;
   }
-  .footerContainer .footerParagraphContainer .logoContainer .footerLinks .imgFooter {
+  .footerContainer .logoContainer .footerLinks .imgFooter {
     width: 30px;
     height: 25px;
   }
