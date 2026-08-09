@@ -8,14 +8,14 @@
   box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
   background-image:
     linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)),
-    url(../../Img/fondoCompras.webp);
+    url(../Img/fondoCompras.webp);
 
   .titleStyle {
     font-family: v.$fuente2;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    font-size: 38px;
+    font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
     color: v.$font-color-primary;
     text-align: center;
     padding: 1rem;
@@ -30,17 +30,15 @@
     font-weight: 500;
     font-style: normal;
     gap: 1rem;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
     text-align: center;
   }
   @include m.mobile {
     padding: 1rem;
     .titleStyle {
-      font-size: 30px;
       margin-bottom: 0px;
     }
     .paragraphStyle {
-      font-size: 15px;
       margin-bottom: 0px;
     }
   }
@@ -109,7 +107,7 @@
       font-optical-sizing: auto;
       font-weight: 900;
       font-style: normal;
-      font-size: 30px;
+      font-size: clamp(1.5rem, 1rem + 1.6vw, 2.25rem);
       text-align: center;
       margin-bottom: 2rem;
     }
@@ -126,6 +124,7 @@
           width: 100%;
           aspect-ratio: 3/4;
           object-fit: cover;
+          border-radius: 1rem;
         }
         .productGame {
           color: v.$font-color-primary;
@@ -176,7 +175,6 @@
     }
     .productContainer {
       .productTitle {
-        font-size: 25px;
         margin-bottom: 1rem;
       }
       .gamesGrid {

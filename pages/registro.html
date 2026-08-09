@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,27 +49,38 @@
   <body>
     <header class="mainHeader">
       <h1 class="arcadiaTitle">Arcadia</h1>
+      <input
+        type="checkbox"
+        id="menuToggle"
+        class="menuToggle"
+        aria-label="Abrir menú"
+      />
+      <label for="menuToggle" class="menuButton" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <nav class="mainNav">
         <ul class="listContainer">
           <li class="listStyle">
-            <a href="./index.html" class="mainLinks">INICIO </a>
+            <a href="../index.html" class="mainLinks">INICIO </a>
           </li>
 
           <li class="listStyle">
             <a href="./comprar.html" class="mainLinks">COMPRAR</a>
           </li>
-
           <li class="listStyle">
-            <a href="./registro.html" class="mainLinks">REGISTRATE</a>
+            <a href="./inicio.html" class="mainLinks">INICIA SESIÓN</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="mainContainerForm">
       <div class="textAndFormContainer">
-        <h2 class="formTitle">Iniciar Sesión</h2>
+        <h2 class="formTitle">UNETE A ARCADIA</h2>
 
-        <form class="formContainer" aria-label="Formulario de Inicio de Sesión">
+        <form class="formContainer" aria-label="Formulario de registro">
           <label class="labelForm" for="Nombre">Nombre de usuario</label>
           <input
             class="inputForm"
@@ -79,6 +90,17 @@
             required
             aria-required="true"
           />
+
+          <label class="labelForm" for="Email">Correo Electronico</label>
+          <input
+            class="inputForm"
+            type="email"
+            id="Email"
+            name="email"
+            required
+            aria-required="true"
+          />
+
           <label class="labelForm" for="password">Contraseña</label>
           <input
             class="inputForm"
@@ -90,10 +112,29 @@
             aria-label="campo para ingresar contraseña"
           />
 
-          <button class="buttonForm" type="submit">Iniciar Sesión</button>
+          <label class="labelForm" for="date">Fecha de nacimeinto</label>
+          <input
+            class="inputForm"
+            type="date"
+            id="birthdate"
+            name="date"
+            required
+            aria-required="true"
+            aria-label="campo para ingresar fecha de nacimiento"
+          />
 
-          <p class="formParagraphRegistro">¿No sos parte de Arcadia?</p>
-          <a href="./registro.html" class="formLink">Registrate ahora</a>
+          <div class="termsContainer">
+            <input type="checkbox" id="terms" required />
+
+            <label class="labelForm1" for="terms">
+              Acepto los términos y condiciones
+            </label>
+          </div>
+
+          <button class="buttonForm" type="submit">Crear Cuenta</button>
+
+          <p class="formParagraphRegistro">¿Ya sos parte de Arcadia?</p>
+          <a href="./inicio.html" class="formLink">Inicia sesión</a>
         </form>
       </div>
     </main>
@@ -107,7 +148,7 @@
           class="footerLinks"
           href="https://www.instagram.com/_fairyvamp_/"
           target="_blank"
-          ><img class="imgFooter" src="./Img/instagram.svg" alt="Instagram" />
+          ><img class="imgFooter" src="../Img/instagram.svg" alt="Instagram" />
         </a>
 
         <a
@@ -115,7 +156,7 @@
           href="https://www.youtube.com/channel/UCQhK6UIHkdx-e2VT9ptcf2A"
           target="_blank"
         >
-          <img class="imgFooter" src="./Img/youtube.svg" alt="youtube" />
+          <img class="imgFooter" src="../Img/youtube.svg" alt="youtube" />
         </a>
 
         <a
@@ -123,7 +164,7 @@
           href="https://www.twitch.tv/fairyvamp_"
           target="_blank"
         >
-          <img class="imgFooter" src="./Img/twitch.svg" alt="Twitch" />
+          <img class="imgFooter" src="../Img/twitch.svg" alt="Twitch" />
         </a>
       </div>
     </footer>

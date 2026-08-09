@@ -8,10 +8,9 @@
   .textAndFormContainer {
     @include m.flex(column, center);
     filter: drop-shadow(2px 4px 6px black);
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 9.2rem 2rem 9.2rem 2rem;
     color: white;
-    width: 650px;
+    max-width: 650px;
     padding: 2.5rem;
     border-radius: 20px;
     background: rgba(20, 0, 40, 0.7);
@@ -113,7 +112,7 @@
   }
   @include m.mobile {
     .textAndFormContainer {
-      margin: 1rem;
+      margin: 4rem 1rem 4rem 1rem;
       width: 330px;
       padding: 1.5rem;
 

@@ -60,6 +60,7 @@
   top: 0px;
   z-index: 1;
   gap: 2rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -69,11 +70,43 @@
   margin: 1rem;
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.5rem + 2.222vw, 3rem);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "EDPT" 100, "EHLT" 12;
+}
+.mainHeader .menuToggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.mainHeader .menuButton {
+  display: none;
+  width: 40px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+.mainHeader .menuButton span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+.mainHeader .menuButton span:nth-child(1) {
+  top: 0;
+}
+.mainHeader .menuButton span:nth-child(2) {
+  top: 14px;
+}
+.mainHeader .menuButton span:nth-child(3) {
+  bottom: 0;
 }
 .mainHeader .mainNav .listContainer {
   gap: 1rem;
@@ -101,20 +134,67 @@
 .mainHeader .mainNav .listContainer .listStyle .mainLinks:hover {
   color: #ff00ff;
 }
+@media (max-width: 1260px) {
+  .mainHeader {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem 0rem 1rem;
+  }
+  .mainHeader .menuButton {
+    display: block;
+  }
+  .mainHeader .mainNav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .mainHeader .mainNav .listContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0 0;
+  }
+  .mainHeader .mainNav .listContainer .listStyle {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-right: 0;
+    padding-bottom: 0.75rem;
+  }
+  .mainHeader .mainNav .listContainer .listStyle .mainLinks {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+  }
+  .mainHeader .menuToggle:checked + .menuButton span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 14px;
+  }
+  .mainHeader .menuToggle:checked + .menuButton span:nth-child(2) {
+    opacity: 0;
+  }
+  .mainHeader .menuToggle:checked + .menuButton span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 14px;
+  }
+  .mainHeader .menuToggle:checked ~ .mainNav {
+    max-height: 500px;
+  }
+}
 
 .firstSection {
   background-color: #34124b;
   padding: 2rem;
   border-bottom: 1px solid rgba(173, 57, 155, 0.4);
   box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../../Img/fondoCompras.webp);
+  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../Img/fondoCompras.webp);
 }
 .firstSection .titleStyle {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-size: 38px;
+  font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
   color: #ffffff;
   text-align: center;
   padding: 1rem;
@@ -128,7 +208,7 @@
   font-weight: 500;
   font-style: normal;
   gap: 1rem;
-  font-size: 20px;
+  font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 525px) {
@@ -136,11 +216,9 @@
     padding: 1rem;
   }
   .firstSection .titleStyle {
-    font-size: 30px;
     margin-bottom: 0px;
   }
   .firstSection .paragraphStyle {
-    font-size: 15px;
     margin-bottom: 0px;
   }
 }
@@ -205,7 +283,7 @@
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-size: 30px;
+  font-size: clamp(1.5rem, 1rem + 1.6vw, 2.25rem);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -225,6 +303,7 @@
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
+  border-radius: 1rem;
 }
 .storeLayout .productContainer .gamesGrid .gameCard .productGame {
   color: #ffffff;
@@ -272,7 +351,6 @@
     display: none;
   }
   .storeLayout .productContainer .productTitle {
-    font-size: 25px;
     margin-bottom: 1rem;
   }
   .storeLayout .productContainer .gamesGrid {
@@ -293,6 +371,17 @@
   }
 }
 
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
 .firstSectionContainer {
   padding: 1rem;
   border-top: 2px solid #ad399b;
@@ -304,7 +393,7 @@
   align-items: center;
   background-position: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../../Img/fondoPrincipal.webp);
+  background-image: linear-gradient(rgba(26, 16, 38, 0.8), rgba(26, 16, 38, 0.8)), url(../Img/fondoPrincipal.webp);
 }
 .firstSectionContainer .mainContainer {
   display: flex;
@@ -317,7 +406,7 @@
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-size: 38px;
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.375rem);
   margin: 0px;
   text-align: center;
   padding: 1rem;
@@ -330,17 +419,12 @@
   font-weight: 500;
   font-style: normal;
   gap: 1rem;
-  font-size: 20px;
+  font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 525px) {
-  .firstSectionContainer .mainContainer .titleStyle {
-    margin-bottom: 0px;
-    font-size: 24px;
-  }
   .firstSectionContainer .mainContainer .paragraphStyle {
     margin-bottom: 0px;
-    font-size: 13px;
   }
 }
 
@@ -365,7 +449,7 @@
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
-  font-size: 38px;
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.375rem);
   margin: 0px;
   color: #ffffff;
   text-align: center;
@@ -373,16 +457,20 @@
   margin-bottom: 1rem;
 }
 .sectionContainer .gamesContainer {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   align-items: unset;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 2rem;
   gap: 2rem;
+  justify-content: center;
 }
 .sectionContainer .gamesContainer .styledGame {
   border: 1px solid #52246f;
   border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #1a1026;
   box-shadow: 0 0 5px #ad399b, 0 0 10px #ad399b, 0 0 20px #6e2bff;
 }
@@ -441,11 +529,11 @@
   color: #000000;
   box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
+.sectionContainer .gamesContainer .styledGame:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 15px rgba(110, 43, 255, 0.8470588235);
+}
 @media (min-width: 300px) and (max-width: 525px) {
-  .sectionContainer .textContainer .titleStyle {
-    font-size: 24px;
-    margin-bottom: 0px;
-  }
   .sectionContainer .gamesContainer {
     display: flex;
     flex-direction: column;
@@ -489,10 +577,9 @@
   flex-direction: column;
   align-items: center;
   filter: drop-shadow(2px 4px 6px black);
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 9.2rem 2rem 9.2rem 2rem;
   color: white;
-  width: 650px;
+  max-width: 650px;
   padding: 2.5rem;
   border-radius: 20px;
   background: rgba(20, 0, 40, 0.7);
@@ -585,7 +672,7 @@
 }
 @media (min-width: 300px) and (max-width: 525px) {
   .mainContainerForm .textAndFormContainer {
-    margin: 1rem;
+    margin: 4rem 1rem 4rem 1rem;
     width: 330px;
     padding: 1.5rem;
   }
@@ -620,12 +707,21 @@
   flex-direction: row;
   align-items: unset;
   gap: 2rem;
-  justify-content: left;
+  justify-content: space-between;
   background-color: #24103a;
   padding: 2rem;
   border-top: 1px solid rgba(173, 57, 155, 0.6);
   border-bottom: 1px solid rgba(173, 57, 155, 0.6);
   box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 920px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+}
+.profileContainer .textAndImageContainer {
+  display: flex;
+  gap: 2rem;
 }
 .profileContainer .profileCards {
   display: flex;
@@ -633,7 +729,7 @@
   align-items: unset;
   gap: 2rem;
   align-self: auto;
-  margin-left: 20rem;
+  flex-wrap: wrap;
 }
 .profileContainer .profileCards .card {
   border: #ad399b solid 2px;
@@ -681,6 +777,7 @@
 }
 .profileContainer .profileImg {
   border-radius: 132px;
+  max-height: 234px;
 }
 .profileContainer .profileTextContainer .profileName {
   color: #ffffff;
@@ -782,6 +879,7 @@
 }
 
 .activityLayout {
+  flex-grow: 1;
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 4rem;
