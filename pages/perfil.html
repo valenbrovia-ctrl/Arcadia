@@ -49,6 +49,17 @@
   <body>
     <header class="mainHeader">
       <h1 class="arcadiaTitle">Arcadia</h1>
+      <input
+        type="checkbox"
+        id="menuToggle"
+        class="menuToggle"
+        aria-label="Abrir menú"
+      />
+      <label for="menuToggle" class="menuButton" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <nav class="mainNav">
         <ul class="listContainer">
           <li class="listStyle">
@@ -67,20 +78,22 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main style="display: flex; flex-direction: column">
       <div class="profileContainer">
-        <img
-          src="../Img/usuarioFem.webp"
-          alt="foto de perfil"
-          class="profileImg"
-        />
-        <div class="profileTextContainer">
-          <h3 class="profileName">Nombre de usuario</h3>
+        <div class="textAndImageContainer">
+          <img
+            src="../Img/usuarioFem.webp"
+            alt="foto de perfil"
+            class="profileImg"
+          />
+          <div class="profileTextContainer">
+            <h3 class="profileName">Nombre de usuario</h3>
 
-          <p class="profileBio">
-            Explorador de mundos, amante del terror y aventuras indie.
-          </p>
-          <button class="profileButton">Editar Perfil</button>
+            <p class="profileBio">
+              Explorador de mundos, amante del terror y aventuras indie.
+            </p>
+            <button class="profileButton">Editar Perfil</button>
+          </div>
         </div>
         <div class="profileCards">
           <div class="card mb-3" style="max-width: 18rem">
